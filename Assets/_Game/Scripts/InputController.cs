@@ -17,7 +17,12 @@ public class InputController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		UpdateMouse();
+
+		if(Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+			UpdateTouch();
+		else
+			UpdateMouse();
+		
 		if(_isDown){
 			_currentAngle=(_startY - _currentY)*rotationFactor;
 		}
@@ -34,7 +39,21 @@ public class InputController : MonoBehaviour {
 			_isDown=false;
 	}
 
-
+	void UpdateTouch(){
+		for (int i = 0; i < Input.touchCount; i++) {
+			Touch touch = Input.GetTouch(i);
+			switch(touch.phase){
+			case TouchPhase.Began:
+				_startY = touch.position.y;
+				_isDown=true;
+				break;
+			case TouchPhase.Ended:
+				_isDown=false;
+				break;
+			}
+			_currentY = touch.position.y;
+		}
+	}
 
 	public bool IsDown {
 		get {

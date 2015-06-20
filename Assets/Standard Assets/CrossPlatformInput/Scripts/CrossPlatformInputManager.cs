@@ -28,6 +28,7 @@ namespace UnityStandardAssets.CrossPlatformInput
 #else
 			activeInput = s_HardwareInput;
 #endif
+			activeInput = s_HardwareInput;
 		}
 
 		public static void SwitchActiveInputMethod(ActiveInputMethod activeInputMethod)
