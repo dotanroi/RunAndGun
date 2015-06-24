@@ -6,13 +6,14 @@ public class Player : MonoBehaviour {
 
 
 	public GameObject bulletPrefab;
-	public float fireRate=0.25f;
+	float fireRate=0.1f;
 
 	PlatformerCharacter2D _character2D;
 	Rigidbody2D _rigidbody2D;
 
 	bool _isFireing=false;
 	float _fireAngle=0;
+	bool _isJump=false;
 
 	void Awake(){
 		_character2D=GetComponent<PlatformerCharacter2D>();
@@ -23,17 +24,18 @@ public class Player : MonoBehaviour {
 		InvokeRepeating("DoFire",0,fireRate);
 	}
 
-//	void FixedUpdate(){
-//		_character2D.Move(1,false,false);
-//	}
+	void FixedUpdate(){
+		_character2D.Move(1,false,_isJump);
+		_isJump=false;
+	}
 
 	void DoFire(){
 		if(_isFireing){
 			GameObject bulletGo = Instantiate(bulletPrefab,transform.position,Quaternion.Euler(0,0,_fireAngle)) as GameObject;
-			Rigidbody2D bulletBody = bulletGo.GetComponent<Rigidbody2D>();
-			Vector2 velocity = bulletBody.velocity;
-			velocity.x = _rigidbody2D.velocity.x;
-			bulletBody.velocity = velocity;
+//			Rigidbody2D bulletBody = bulletGo.GetComponent<Rigidbody2D>();
+//			Vector2 velocity = bulletBody.velocity;
+//			velocity.x = _rigidbody2D.velocity.x;
+//			bulletBody.velocity = velocity;
 		}
 	}
 
@@ -52,6 +54,15 @@ public class Player : MonoBehaviour {
 		}
 		set {
 			_fireAngle = value;
+		}
+	}
+
+	public bool IsJump {
+		get {
+			return _isJump;
+		}
+		set {
+			_isJump = value;
 		}
 	}
 }

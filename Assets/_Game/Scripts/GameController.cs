@@ -7,6 +7,7 @@ public class GameController : MonoBehaviour {
 	InputController _inputController;
 
 	void Awake(){
+		Application.targetFrameRate=60;
 		_inputController = GetComponent<InputController>();
 	}
 
@@ -19,5 +20,6 @@ public class GameController : MonoBehaviour {
 	void Update () {
 		player.IsFireing = _inputController.IsDown;
 		player.FireAngle = _inputController.CurrentAngle;
+		player.IsJump = _inputController.IsJump;
 	}
 }

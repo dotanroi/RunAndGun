@@ -4,6 +4,7 @@ using System.Collections;
 public class InputController : MonoBehaviour {
 
 	bool _isDown;
+	bool _isJump;
 	float _startY;
 	float _currentY;
 	float _currentAngle=0;
@@ -28,27 +29,47 @@ public class InputController : MonoBehaviour {
 		}
 	}
 
-	void UpdateMouse(){
-		if(Input.GetMouseButtonDown(0)){
-			_isDown=true;
-			_startY=Input.mousePosition.y;
-		}
-		_currentY = Input.mousePosition.y;
+	void FixedUpdate(){
+		_isJump=false;
+	}
 
-		if(Input.GetMouseButtonUp(0))
-			_isDown=false;
+	void UpdateMouse(){
+
+		if(Input.mousePosition.x<Screen.width/2)
+		{
+			if(Input.GetMouseButtonDown(0)){
+				_isDown=true;
+				_startY=Input.mousePosition.y;
+			}
+			_currentY = Input.mousePosition.y;
+			
+			if(Input.GetMouseButtonUp(0))
+				_isDown=false;
+		}
+		else 
+		{
+			//_isJump = Input.GetMouseButtonDown(0);
+		}
+		if (!_isJump)
+			_isJump = Input.GetButtonDown("Jump");
 	}
 
 	void UpdateTouch(){
+
 		for (int i = 0; i < Input.touchCount; i++) {
 			Touch touch = Input.GetTouch(i);
 			switch(touch.phase){
 			case TouchPhase.Began:
-				_startY = touch.position.y;
-				_isDown=true;
+				if(touch.position.x<Screen.width/2){
+					_startY = touch.position.y;
+					_isDown=true;
+				}
+				else
+					_isJump=true;
 				break;
 			case TouchPhase.Ended:
-				_isDown=false;
+				if(touch.position.x<Screen.width/2)
+					_isDown=false;
 				break;
 			}
 			_currentY = touch.position.y;
@@ -64,6 +85,12 @@ public class InputController : MonoBehaviour {
 	public float CurrentAngle {
 		get {
 			return _currentAngle;
+		}
+	}
+
+	public bool IsJump {
+		get {
+			return _isJump;
 		}
 	}
 }
