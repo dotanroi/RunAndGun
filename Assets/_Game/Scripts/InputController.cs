@@ -72,7 +72,8 @@ public class InputController : MonoBehaviour {
 					_isDown=false;
 				break;
 			}
-			_currentY = touch.position.y;
+			if(touch.position.x<Screen.width/2)
+				_currentY = touch.position.y;
 		}
 	}
 
