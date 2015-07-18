@@ -6,7 +6,7 @@ public class Player : MonoBehaviour {
 
 
 	public GameObject bulletPrefab;
-	float fireRate=0.1f;
+	float fireRate=0.09f;
 
 	PlatformerCharacter2D _character2D;
 	Rigidbody2D _rigidbody2D;
@@ -31,7 +31,8 @@ public class Player : MonoBehaviour {
 
 	void DoFire(){
 		if(_isFireing){
-			GameObject bulletGo = Instantiate(bulletPrefab,transform.position,Quaternion.Euler(0,0,_fireAngle)) as GameObject;
+			GameObject bulletGo = ObjectPool.Instance.Allocate(bulletPrefab,transform.position,Quaternion.Euler(0,0,_fireAngle));
+			//GameObject bulletGo = Instantiate(bulletPrefab,transform.position,Quaternion.Euler(0,0,_fireAngle)) as GameObject;
 //			Rigidbody2D bulletBody = bulletGo.GetComponent<Rigidbody2D>();
 //			Vector2 velocity = bulletBody.velocity;
 //			velocity.x = _rigidbody2D.velocity.x;
