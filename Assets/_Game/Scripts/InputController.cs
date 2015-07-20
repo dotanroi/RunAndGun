@@ -9,6 +9,8 @@ public class InputController : MonoBehaviour {
 	float _currentY;
 	float _currentAngle=0;
 
+	float _resetJumpTime = 0;
+
 	public float rotationFactor = 0.5f;
 
 	// Use this for initialization
@@ -30,7 +32,13 @@ public class InputController : MonoBehaviour {
 	}
 
 	void FixedUpdate(){
-		_isJump=false;
+		if(_resetJumpTime>0)
+			IsJump=false;
+		else{
+			_resetJumpTime-=Time.fixedTime;
+		}
+
+		
 	}
 
 	void UpdateMouse(){
@@ -48,10 +56,14 @@ public class InputController : MonoBehaviour {
 		}
 		else 
 		{
-			//_isJump = Input.GetMouseButtonDown(0);
+
 		}
-		if (!_isJump)
-			_isJump = Input.GetButtonDown("Jump");
+		if (!IsJump)
+			IsJump = Input.GetButtonDown("Jump");
+	}
+
+	void Jump(bool isJump){
+
 	}
 
 	void UpdateTouch(){
@@ -65,7 +77,7 @@ public class InputController : MonoBehaviour {
 					_isDown=true;
 				}
 				else
-					_isJump=true;
+					IsJump=true;
 				break;
 			case TouchPhase.Ended:
 				if(touch.position.x<Screen.width/2)
@@ -92,6 +104,18 @@ public class InputController : MonoBehaviour {
 	public bool IsJump {
 		get {
 			return _isJump;
+		}
+		private set{
+			if(!value){
+				_isJump = false;
+				_resetJumpTime=0;
+			}
+			else{
+				if(!_isJump){
+					_isJump=true;
+					_resetJumpTime=1.5f;
+				}
+			}
 		}
 	}
 }

@@ -20,6 +20,10 @@ namespace UnityStandardAssets._2D
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 
+		int _jumpCount=0;
+
+		//public Vector3 volacityTmp;
+
         private void Awake()
         {
             // Setting up references.
@@ -32,15 +36,25 @@ namespace UnityStandardAssets._2D
 
         private void FixedUpdate()
         {
-            m_Grounded = false;
+//			if(m_Grounded){
+//				Vector3 velocity = m_Rigidbody2D.velocity;
+//				velocity.y=0;
+//				m_Rigidbody2D.velocity = velocity;
+//			}
+
+			m_Grounded = false;
+
+			//volacityTmp = m_Rigidbody2D.velocity;
 
             // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
             // This can be done using layers instead but Sample Assets will not overwrite your project settings.
             Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
             for (int i = 0; i < colliders.Length; i++)
             {
-                if (colliders[i].gameObject != gameObject)
-                    m_Grounded = true;
+				if (colliders[i].gameObject != gameObject && m_Rigidbody2D.velocity.y<=0){// 
+					m_Grounded = true;
+					_jumpCount=2;
+				}
             }
             m_Anim.SetBool("Ground", m_Grounded);
 
@@ -89,9 +103,12 @@ namespace UnityStandardAssets._2D
                     Flip();
                 }
             }
+
             // If the player should jump...
-			if (m_Grounded && jump )//&& m_Anim.GetBool("Ground")
+			//if (m_Grounded && jump )
+			if (_jumpCount>0 && jump )
             {
+				_jumpCount--;
                 // Add a vertical force to the player.
                 m_Grounded = false;
                 m_Anim.SetBool("Ground", false);
@@ -115,5 +132,11 @@ namespace UnityStandardAssets._2D
             theScale.x *= -1;
             transform.localScale = theScale;
         }
+
+		public bool IsGrounded {
+			get {
+				return m_Grounded;
+			}
+		}
     }
 }

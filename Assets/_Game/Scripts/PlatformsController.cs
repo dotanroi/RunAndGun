@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class PlatformsController : MonoBehaviour {
 
     public GameObject platformPrefab;
+	public float percentForPlatformSpawn=100;
 
     float _numOfSegments=8;
 	float _segmentsSize=2.5f;
@@ -16,11 +17,10 @@ public class PlatformsController : MonoBehaviour {
     }
 	 
     void Init(){
-        Vector3 pos = new Vector3(-9,0,0);
+        Vector3 pos = new Vector3(-9,transform.position.y,0);
 		for (int i = 0; i < _numOfSegments; i++) {
-
 			GameObject instance = Instantiate(platformPrefab);
-            instance.transform.position = pos;
+			instance.transform.position = pos;
             instance.transform.parent = gameObject.transform;
 			pos.x+=_segmentsSize;
 			_floor.AddLast(instance.GetComponent<PlatformSegment>());
@@ -35,7 +35,9 @@ public class PlatformsController : MonoBehaviour {
 
 		PlatformSegment firstSegment = _floor.First.Value;
 
-		if(!firstSegment.rightSprite.bounds.IsVisible()){
+		Vector3 leftScreenEdge = Camera.main.ViewportToWorldPoint(new Vector3(0,0,0));
+
+		if(firstSegment.rightSprite.bounds.max.x<leftScreenEdge.x){
 
 			_floor.RemoveFirst();
           	
@@ -46,6 +48,12 @@ public class PlatformsController : MonoBehaviour {
 
 			firstSegment.gameObject.transform.position = pos;
 			_floor.AddLast(firstSegment);
+
+			if(Random.Range(0,100)>percentForPlatformSpawn)
+				firstSegment.gameObject.SetActive(false);
+			else
+				firstSegment.gameObject.SetActive(true);
+
         }
     }   
 
