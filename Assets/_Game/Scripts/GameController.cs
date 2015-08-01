@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class GameController : MonoBehaviour {
@@ -18,7 +18,7 @@ public class GameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		player.IsFireing = _inputController.IsDown;
+		player.IsFiring = _inputController.IsFiring;
 		player.FireAngle = _inputController.CurrentAngle;
 		player.IsJump = _inputController.IsJump;
 	}

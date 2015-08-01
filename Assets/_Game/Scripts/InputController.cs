@@ -89,7 +89,7 @@ public class InputController : MonoBehaviour {
 		}
 	}
 
-	public bool IsDown {
+	public bool IsFiring {
 		get {
 			return _isDown;
 		}

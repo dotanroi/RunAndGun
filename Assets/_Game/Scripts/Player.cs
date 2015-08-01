@@ -11,7 +11,7 @@ public class Player : MonoBehaviour {
 	PlatformerCharacter2D _character2D;
 	//Rigidbody2D _rigidbody2D;
 
-	bool _isFireing=false;
+	bool _isFiring=false;
 	float _fireAngle=0;
 	bool _isJump=false;
 
@@ -30,7 +30,7 @@ public class Player : MonoBehaviour {
 	}
 
 	void DoFire(){
-		if(_isFireing){
+		if(_isFiring){
 			ObjectPool.Instance.Allocate(bulletPrefab,transform.position,Quaternion.Euler(0,0,_fireAngle));
 			//GameObject bulletGo = Instantiate(bulletPrefab,transform.position,Quaternion.Euler(0,0,_fireAngle)) as GameObject;
 //			Rigidbody2D bulletBody = bulletGo.GetComponent<Rigidbody2D>();
@@ -40,12 +40,12 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-	public bool IsFireing {
+	public bool IsFiring {
 		get {
-			return _isFireing;
+			return _isFiring;
 		}
 		set {
-			_isFireing = value;
+			_isFiring = value;
 		}
 	}
 
