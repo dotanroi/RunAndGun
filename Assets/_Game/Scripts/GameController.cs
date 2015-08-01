@@ -21,5 +21,6 @@ public class GameController : MonoBehaviour {
 		player.IsFiring = _inputController.IsFiring;
 		player.FireAngle = _inputController.CurrentAngle;
 		player.IsJump = _inputController.IsJump;
+		player.IsDown = _inputController.IsDown;
 	}
 }

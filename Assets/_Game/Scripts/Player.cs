@@ -14,6 +14,7 @@ public class Player : MonoBehaviour {
 	bool _isFiring=false;
 	float _fireAngle=0;
 	bool _isJump=false;
+	bool _isDown = false;
 
 	void Awake(){
 		_character2D=GetComponent<PlatformerCharacter2D>();
@@ -25,7 +26,7 @@ public class Player : MonoBehaviour {
 	}
 
 	void FixedUpdate(){
-		_character2D.Move(1,false,_isJump);
+		_character2D.Move(1,false,_isJump,_isDown);
 		_isJump=false;
 	}
 
@@ -64,6 +65,15 @@ public class Player : MonoBehaviour {
 		}
 		set {
 			_isJump = value;
+		}
+	}
+
+	public bool IsDown {
+		get {
+			return _isDown;
+		}
+		set {
+			_isDown = value;
 		}
 	}
 }

@@ -49,6 +49,8 @@ public class PlatformsController : MonoBehaviour {
 			firstSegment.gameObject.transform.position = pos;
 			_floor.AddLast(firstSegment);
 
+			firstSegment.Reset();
+
 			if(Random.Range(0,100)>percentForPlatformSpawn)
 				firstSegment.gameObject.SetActive(false);
 			else

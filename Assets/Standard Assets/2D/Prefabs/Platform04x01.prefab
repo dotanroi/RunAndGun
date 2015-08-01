@@ -197,6 +197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftSprite: {fileID: 21200000}
   rightSprite: {fileID: 21200000}
+  collider2d: {fileID: 6100004}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
