@@ -3,7 +3,7 @@ using System.Collections;
 
 public class InputController : MonoBehaviour {
 
-	bool _isDown;
+	bool _isFiring;
 	bool _isJump;
 	float _startY;
 	float _currentY;
@@ -26,7 +26,7 @@ public class InputController : MonoBehaviour {
 		else
 			UpdateMouse();
 		
-		if(_isDown){
+		if(_isFiring){
 			_currentAngle=(_startY - _currentY)*rotationFactor;
 		}
 	}
@@ -46,13 +46,13 @@ public class InputController : MonoBehaviour {
 		if(Input.mousePosition.x<Screen.width/2)
 		{
 			if(Input.GetMouseButtonDown(0)){
-				_isDown=true;
+				_isFiring=true;
 				_startY=Input.mousePosition.y;
 			}
 			_currentY = Input.mousePosition.y;
 			
 			if(Input.GetMouseButtonUp(0))
-				_isDown=false;
+				_isFiring=false;
 		}
 		else 
 		{
@@ -74,14 +74,14 @@ public class InputController : MonoBehaviour {
 			case TouchPhase.Began:
 				if(touch.position.x<Screen.width/2){
 					_startY = touch.position.y;
-					_isDown=true;
+					_isFiring=true;
 				}
 				else
 					IsJump=true;
 				break;
 			case TouchPhase.Ended:
 				if(touch.position.x<Screen.width/2)
-					_isDown=false;
+					_isFiring=false;
 				break;
 			}
 			if(touch.position.x<Screen.width/2)
@@ -91,7 +91,7 @@ public class InputController : MonoBehaviour {
 
 	public bool IsFiring {
 		get {
-			return _isDown;
+			return _isFiring;
 		}
 	}
 
