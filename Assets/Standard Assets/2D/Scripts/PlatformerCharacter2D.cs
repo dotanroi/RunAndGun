@@ -53,7 +53,7 @@ namespace UnityStandardAssets._2D
             {
 				if (colliders[i].gameObject != gameObject && m_Rigidbody2D.velocity.y<=0){// 
 					m_Grounded = true;
-					_jumpCount=2;
+					_jumpCount=1;
 				}
             }
             m_Anim.SetBool("Ground", m_Grounded);

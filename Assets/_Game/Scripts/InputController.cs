@@ -17,7 +17,7 @@ public class InputController : MonoBehaviour {
 	public float rotationFactor = 0.5f;
 	public float swipeSensitivity = 0.01f;
 
-	public enum UpDownTypes{UpDownSwipe,JumpPressDownSwip,Buttons}
+	public enum UpDownTypes{UpDownSwipe,JumpPressDownSwip,NoDown}
 
 	public UpDownTypes upDownType = UpDownTypes.UpDownSwipe;
 
@@ -97,6 +97,8 @@ public class InputController : MonoBehaviour {
 
 	void HandleTouchUpDownBegan(Touch touch){
 		_swipeFirstPressPos = new Vector2(touch.position.x,touch.position.y);
+		if(upDownType== UpDownTypes.NoDown)
+			IsJump=true;
 	}
 
 	void HandleTouchUpDownEnded(Touch touch){

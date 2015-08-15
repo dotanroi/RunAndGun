@@ -90,16 +90,16 @@ TrailRenderer:
   m_Colors:
     m_Color[0]:
       serializedVersion: 2
-      rgba: 4294967295
+      rgba: 4278190335
     m_Color[1]:
       serializedVersion: 2
-      rgba: 2919235583
+      rgba: 2908613346
     m_Color[2]:
       serializedVersion: 2
-      rgba: 1946157055
+      rgba: 1929445350
     m_Color[3]:
       serializedVersion: 2
-      rgba: 1056964607
+      rgba: 1040252913
     m_Color[4]:
       serializedVersion: 2
       rgba: 335544319
@@ -141,7 +141,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dc85eee1880948f4caa88b8999bf2853, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: .619607866}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
