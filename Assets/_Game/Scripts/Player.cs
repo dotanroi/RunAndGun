@@ -6,7 +6,7 @@ public class Player : MonoBehaviour {
 
 
 	public GameObject bulletPrefab;
-	float fireRate=0.09f;
+	public float fireRate=0.05f;
 
 	PlatformerCharacter2D _character2D;
 	//Rigidbody2D _rigidbody2D;

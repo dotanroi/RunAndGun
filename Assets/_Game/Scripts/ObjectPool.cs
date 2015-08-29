@@ -62,6 +62,7 @@ public class ObjectPool : Singleton<ObjectPool>
 		
 		_allocatedDictionary [ret] = prefab;
 		ret.SetActive (true);
+		ret.SendMessage("OnAllocate",SendMessageOptions.DontRequireReceiver);
 		return ret;
 	}
 
@@ -85,6 +86,7 @@ public class ObjectPool : Singleton<ObjectPool>
 
 		_allocatedDictionary [ret] = prefab;
 		ret.SetActive (true);
+		ret.SendMessage("OnAllocate",SendMessageOptions.DontRequireReceiver);
 		return ret;
 	}
 
@@ -110,6 +112,7 @@ public class ObjectPool : Singleton<ObjectPool>
 
 	public void Release (GameObject instance)
 	{
+		instance.SendMessage("OnRelease",SendMessageOptions.DontRequireReceiver);
 		if(!IsInstanceAllocated(instance)){
 			Destroy(instance);
 			return;

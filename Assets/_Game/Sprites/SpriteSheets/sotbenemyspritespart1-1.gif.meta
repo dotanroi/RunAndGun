@@ -1,0 +1,759 @@
+fileFormatVersion: 2
+guid: 774c1910d0f930b4a8fa7f52216a8a6e
+timeCreated: 1440841148
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sotbenemyspritespart1-1_0
+    21300002: sotbenemyspritespart1-1_1
+    21300004: sotbenemyspritespart1-1_2
+    21300006: sotbenemyspritespart1-1_3
+    21300008: sotbenemyspritespart1-1_4
+    21300010: sotbenemyspritespart1-1_5
+    21300012: sotbenemyspritespart1-1_6
+    21300014: sotbenemyspritespart1-1_7
+    21300016: sotbenemyspritespart1-1_8
+    21300018: sotbenemyspritespart1-1_9
+    21300020: sotbenemyspritespart1-1_10
+    21300022: sotbenemyspritespart1-1_11
+    21300024: sotbenemyspritespart1-1_12
+    21300026: sotbenemyspritespart1-1_13
+    21300028: sotbenemyspritespart1-1_14
+    21300030: sotbenemyspritespart1-1_15
+    21300032: sotbenemyspritespart1-1_16
+    21300034: sotbenemyspritespart1-1_17
+    21300036: sotbenemyspritespart1-1_18
+    21300038: sotbenemyspritespart1-1_19
+    21300040: sotbenemyspritespart1-1_20
+    21300042: sotbenemyspritespart1-1_21
+    21300044: sotbenemyspritespart1-1_22
+    21300046: sotbenemyspritespart1-1_23
+    21300048: sotbenemyspritespart1-1_24
+    21300050: sotbenemyspritespart1-1_25
+    21300052: sotbenemyspritespart1-1_26
+    21300054: sotbenemyspritespart1-1_27
+    21300056: sotbenemyspritespart1-1_28
+    21300058: sotbenemyspritespart1-1_29
+    21300060: sotbenemyspritespart1-1_30
+    21300062: sotbenemyspritespart1-1_31
+    21300064: sotbenemyspritespart1-1_32
+    21300066: sotbenemyspritespart1-1_33
+    21300068: sotbenemyspritespart1-1_34
+    21300070: sotbenemyspritespart1-1_35
+    21300072: sotbenemyspritespart1-1_36
+    21300074: sotbenemyspritespart1-1_37
+    21300076: sotbenemyspritespart1-1_38
+    21300078: eye4
+    21300080: eye3
+    21300082: eye2
+    21300084: eye1
+    21300086: eye0
+    21300088: sotbenemyspritespart1-1_44
+    21300090: sotbenemyspritespart1-1_45
+    21300092: sotbenemyspritespart1-1_46
+    21300094: sotbenemyspritespart1-1_47
+    21300096: dragon1
+    21300098: dragon3
+    21300100: dragon2
+    21300102: dragon0
+    21300104: sotbenemyspritespart1-1_52
+    21300106: sotbenemyspritespart1-1_53
+    21300108: sotbenemyspritespart1-1_54
+    21300110: sotbenemyspritespart1-1_55
+    21300112: sotbenemyspritespart1-1_56
+    21300114: sotbenemyspritespart1-1_57
+    21300116: sotbenemyspritespart1-1_58
+    21300118: sotbenemyspritespart1-1_59
+    21300120: sotbenemyspritespart1-1_60
+    21300122: sotbenemyspritespart1-1_61
+    21300124: sotbenemyspritespart1-1_62
+    21300126: sotbenemyspritespart1-1_63
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 55
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: sotbenemyspritespart1-1_0
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1933
+        width: 60
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_1
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 1806
+        width: 143
+        height: 140
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_2
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 1805
+        width: 163
+        height: 143
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1823
+        width: 60
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_4
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1822
+        width: 58
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_5
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1816
+        width: 76
+        height: 109
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_6
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 1814
+        width: 76
+        height: 109
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_7
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1810
+        width: 121
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_8
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1810
+        width: 118
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_9
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1623
+        width: 240
+        height: 140
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_10
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 1614
+        width: 138
+        height: 127
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_11
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1600
+        width: 131
+        height: 144
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_12
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1721
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_13
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 1732
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_14
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 1727
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_15
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 1728
+        width: 37
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1402
+        width: 71
+        height: 145
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_17
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1399
+        width: 73
+        height: 145
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_18
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1396
+        width: 73
+        height: 145
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_19
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1397
+        width: 71
+        height: 145
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_20
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1441
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_21
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1428
+        width: 57
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_22
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1430
+        width: 53
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_23
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 1471
+        width: 37
+        height: 216
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_24
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 1474
+        width: 73
+        height: 216
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_25
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 1446
+        width: 38
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_26
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1208
+        width: 71
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_27
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1214
+        width: 73
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_28
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 1209
+        width: 71
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_29
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1214
+        width: 73
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_30
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 974
+        width: 109
+        height: 216
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_31
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1116
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_32
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 989
+        width: 73
+        height: 137
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_33
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1000
+        width: 73
+        height: 126
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_34
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 1086
+        width: 53
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_35
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 1086
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_36
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1086
+        width: 41
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_37
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 1028
+        width: 53
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_38
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 763
+        width: 74
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eye4
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 861
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eye3
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 854
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eye2
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 848
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eye1
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 835
+        width: 56
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eye0
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 831
+        width: 62
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_44
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 539
+        width: 80
+        height: 127
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_45
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 546
+        width: 93
+        height: 127
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_46
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 540
+        width: 93
+        height: 152
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_47
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 535
+        width: 91
+        height: 187
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dragon1
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 598
+        width: 287
+        height: 145
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dragon3
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 593
+        width: 287
+        height: 158
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dragon2
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 425
+        width: 287
+        height: 145
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dragon0
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 429
+        width: 286
+        height: 145
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_52
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 244
+        width: 103
+        height: 138
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_53
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 244
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_54
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 241
+        width: 91
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_55
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 353
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_56
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 213
+        width: 63
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_57
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 217
+        width: 63
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_58
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 211
+        width: 71
+        height: 90
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_59
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 195
+        width: 62
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_60
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 220
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_61
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 82
+        width: 89
+        height: 138
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_62
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 43
+        width: 162
+        height: 175
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sotbenemyspritespart1-1_63
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 76
+        width: 165
+        height: 140
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
