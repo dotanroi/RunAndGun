@@ -464,6 +464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 270693807}
   flyingEnemyPrefab: {fileID: 128858, guid: d1f2bb119dc2fc24888e83fef882d2f6, type: 2}
+  dragonPrefab: {fileID: 161628, guid: bdad11d3adde091428e4f8fcb8012d1f, type: 2}
 --- !u!4 &1295356467
 Transform:
   m_ObjectHideFlags: 0
@@ -491,7 +492,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1812525415
 AudioSource:
   m_ObjectHideFlags: 0
@@ -501,7 +502,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 477f746c5d65f1b40b8d65ef9d5f7ee5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3797192efb487b04485762a0f3578cee, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

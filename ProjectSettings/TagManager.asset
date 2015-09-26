@@ -17,8 +17,8 @@ TagManager:
   - Player
   - Platforms
   - Enemy
-  - 
-  - 
+  - EnemyBullet
+  - EnemyBomb
   - 
   - 
   - 

@@ -33,11 +33,6 @@ public class Player : MonoBehaviour {
 	void DoFire(){
 		if(_isFiring){
 			ObjectPool.Instance.Allocate(bulletPrefab,transform.position,Quaternion.Euler(0,0,_fireAngle));
-			//GameObject bulletGo = Instantiate(bulletPrefab,transform.position,Quaternion.Euler(0,0,_fireAngle)) as GameObject;
-//			Rigidbody2D bulletBody = bulletGo.GetComponent<Rigidbody2D>();
-//			Vector2 velocity = bulletBody.velocity;
-//			velocity.x = _rigidbody2D.velocity.x;
-//			bulletBody.velocity = velocity;
 		}
 	}
 

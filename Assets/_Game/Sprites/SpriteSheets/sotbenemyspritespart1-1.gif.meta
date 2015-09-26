@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 774c1910d0f930b4a8fa7f52216a8a6e
-timeCreated: 1440841148
+timeCreated: 1443002549
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -59,7 +59,7 @@ TextureImporter:
     21300104: sotbenemyspritespart1-1_52
     21300106: sotbenemyspritespart1-1_53
     21300108: sotbenemyspritespart1-1_54
-    21300110: sotbenemyspritespart1-1_55
+    21300110: dragonBullet
     21300112: sotbenemyspritespart1-1_56
     21300114: sotbenemyspritespart1-1_57
     21300116: sotbenemyspritespart1-1_58
@@ -663,7 +663,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sotbenemyspritespart1-1_55
+    - name: dragonBullet
       rect:
         serializedVersion: 2
         x: 579

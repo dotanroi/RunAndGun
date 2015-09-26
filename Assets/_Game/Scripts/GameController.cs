@@ -7,34 +7,55 @@ public class GameController : MonoBehaviour {
 	InputController _inputController;
 
 	public GameObject flyingEnemyPrefab;
+	public GameObject dragonPrefab;
 
 	void Awake(){
 		Application.targetFrameRate=60;
 		_inputController = GetComponent<InputController>();
 	}
 
-	// Use this for initialization
+
 	void Start () {
-		StartCoroutine(CreateEnemyCoro());
+		StartCoroutine(GameLoopCoro());
 	}
 
-	IEnumerator CreateEnemyCoro(){
+	IEnumerator GameLoopCoro(){
 		while(true){
+			yield return StartCoroutine(FlyingEnemysCoro());
+			yield return new WaitForSeconds(2f);
+			yield return StartCoroutine(DragonCoro());
+			yield return new WaitForSeconds(2f);
+		}
+	}
 
+	IEnumerator FlyingEnemysCoro(){
+		float diffY = Random.Range(1f,6f);
 
-			float screenY = Random.Range(50f,Screen.height-120f);
-			//Vector3 startPoint = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width+20f,screenY,15));
-			//ObjectPool.Instance.Allocate(flyingEnemyPrefab,startPoint,Quaternion.identity);
-			//yield return new WaitForSeconds(0.5f);
-
-			for (int i = 0; i < 4; i++) {
-				Vector3 startPoint = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width+20f,screenY,15));
-				ObjectPool.Instance.Allocate(flyingEnemyPrefab,startPoint,Quaternion.identity);
-				yield return new WaitForSeconds(0.25f);
-			}
-			yield return new WaitForSeconds(5f);
+		for (int i = 0; i < 4; i++) {
+			Vector3 startPoint = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width,Screen.height,15));
+			startPoint.x+=1f;
+			startPoint.y-=diffY;
+			ObjectPool.Instance.Allocate(flyingEnemyPrefab,startPoint,Quaternion.identity);
+			yield return new WaitForSeconds(0.25f);
 		}
 	} 
+
+	IEnumerator DragonCoro(){
+
+		Vector3 startPoint = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width,Screen.height,15));
+		startPoint.x+=3f;
+		startPoint.y-=2f;
+
+		GameObject dragonGo = ObjectPool.Instance.Allocate(dragonPrefab,startPoint,Quaternion.identity);
+		dragonGo.transform.SetParent(Camera.main.transform,true);
+		Dragon dragon = dragonGo.GetComponent<Dragon>();
+
+		dragon.Init();
+
+		while(dragon.IsAlive)
+			yield return 0;
+
+	}
 
 	// Update is called once per frame
 	void Update () {
