@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityStandardAssets._2D;
+using System;
 
 public class Player : MonoBehaviour {
 
+
+	public event Action OnPlayerHitEvent = ()=>{};
 
 	public GameObject bulletPrefab;
 	public float fireRate=0.05f;
@@ -71,4 +74,11 @@ public class Player : MonoBehaviour {
 			_isDown = value;
 		}
 	}
+
+
+	void OnCollisionEnter2D(Collision2D coll) {
+		if(!coll.gameObject.layer.Equals("Platforms"))
+			OnPlayerHitEvent();
+	}
+
 }

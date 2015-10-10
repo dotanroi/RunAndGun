@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour {
 	void Awake(){
 		Application.targetFrameRate=60;
 		_inputController = GetComponent<InputController>();
+
+		player.OnPlayerHitEvent+=OnPlayerHit;
 	}
 
 
@@ -21,8 +23,8 @@ public class GameController : MonoBehaviour {
 
 	IEnumerator GameLoopCoro(){
 		while(true){
-			yield return StartCoroutine(FlyingEnemysCoro());
-			yield return new WaitForSeconds(2f);
+//			yield return StartCoroutine(FlyingEnemysCoro());
+//			yield return new WaitForSeconds(2f);
 			yield return StartCoroutine(DragonCoro());
 			yield return new WaitForSeconds(2f);
 		}
@@ -67,6 +69,16 @@ public class GameController : MonoBehaviour {
 		player.FireAngle = _inputController.CurrentAngle;
 		player.IsJump = _inputController.IsJump;
 		player.IsDown = _inputController.IsDown;
+	}
+
+	void OnPlayerHit ()
+	{
+		player.OnPlayerHitEvent-=OnPlayerHit;
+		Destroy(player.gameObject);
+	}
+
+	void OnDestroy(){
+		player.OnPlayerHitEvent-=OnPlayerHit;
 	}
 
 }
