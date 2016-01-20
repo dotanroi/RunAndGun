@@ -19,6 +19,8 @@ public class Player : MonoBehaviour {
 	bool _isJump=false;
 	bool _isDown = false;
 
+	float _speed = 1;
+
 	void Awake(){
 		_character2D=GetComponent<PlatformerCharacter2D>();
 		//_rigidbody2D = GetComponent<Rigidbody2D>();
@@ -29,7 +31,7 @@ public class Player : MonoBehaviour {
 	}
 
 	void FixedUpdate(){
-		_character2D.Move(1,false,_isJump,_isDown);
+		_character2D.Move(_speed,false,_isJump,_isDown);
 		_isJump=false;
 	}
 
@@ -77,8 +79,12 @@ public class Player : MonoBehaviour {
 
 
 	void OnCollisionEnter2D(Collision2D coll) {
-		if(!coll.gameObject.layer.Equals("Platforms"))
+		if(coll.gameObject.layer!=LayerMask.NameToLayer("Platforms")){
+			_speed=0;
+			gameObject.SetActive(false);
 			OnPlayerHitEvent();
+		}
+			
 	}
 
 }

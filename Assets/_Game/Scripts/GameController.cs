@@ -18,13 +18,13 @@ public class GameController : MonoBehaviour {
 
 
 	void Start () {
-		StartCoroutine(GameLoopCoro());
+		StartCoroutine("GameLoopCoro");
 	}
 
 	IEnumerator GameLoopCoro(){
 		while(true){
-//			yield return StartCoroutine(FlyingEnemysCoro());
-//			yield return new WaitForSeconds(2f);
+			yield return StartCoroutine(FlyingEnemysCoro());
+			yield return new WaitForSeconds(2f);
 			yield return StartCoroutine(DragonCoro());
 			yield return new WaitForSeconds(2f);
 		}
@@ -73,8 +73,7 @@ public class GameController : MonoBehaviour {
 
 	void OnPlayerHit ()
 	{
-		player.OnPlayerHitEvent-=OnPlayerHit;
-		Destroy(player.gameObject);
+		StopCoroutine("GameLoopCoro");
 	}
 
 	void OnDestroy(){
